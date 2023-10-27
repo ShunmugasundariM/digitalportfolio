@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  <h1 colspan="2" align="center" p style="color:blue";>APPLICATION FORM</h1>
+  <p style="color:blue"</p></h1>
+</head>
+<body>
+
+<form id="survey-form">
+
+  <div id="description"> Let us apply your application form</div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">*Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">*Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">*Age:</label>
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" id="mobile-label" for="mobile">*mobile:</label>
+    <input type="text" placeholder="Phone Number" class="right input-field" id="mobile">
+  </div>
+    <div class="sub-group">
+   <label class="left" id="mark obtained-label" for="mark obtained">*mark obtained:</label>
+     <input type="text" placeholder="enter your total marks" class="right input-field" id="mark obtained">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" for="dropdown">*if you are first graduate</label>
+
+      <select class="right dropdown" id="dropdown" name="dropdown">
+        <option selected disabled>Select an option</option>
+        <option value="yes">yes</option>
+        <option value=no">no</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left">
+  *Which course you choose</label>
+
+ <ul style="list-style: none;" class="right">
+
+   <li class="checkbox"><label><input type="checkbox" name="course" value="computer" >computer</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="course" value="physics">physics</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="course" value="maths" >maths<label></li>
+     <li class="checkbox"><label><input type="checkbox" name="course" value="chemistry" >chemistry</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="course" value="botony" >botony</label></li>
+       </ul></div></fieldset>
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <label class="left" id="left-radio">Will you recommend by any cota</label>
+
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+
+     <fieldset class="fieldset">
+   <h2>Any comments or suggestions?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+  <button id="submit" type="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+</body>
+</html>
